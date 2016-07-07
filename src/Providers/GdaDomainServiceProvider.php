@@ -1,5 +1,5 @@
 <?php
-namespace GdaDesenv\AdminClient\Providers;
+namespace GdaDesenv\AdminDomain\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
