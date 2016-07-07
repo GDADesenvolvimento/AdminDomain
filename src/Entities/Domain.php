@@ -1,6 +1,6 @@
 <?php
 
-namespace GdaDesenv\AdminDomain;
+namespace GdaDesenv\AdminDomain\Entities;
 
 use GdaDesenv\AdminClient\Entities\Client;
 use Illuminate\Database\Eloquent\Model;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace GdaDesenv\AdminDomain\Controllers;
 
-use GdaDesenv\AdminDomain\Domain;
+use GdaDesenv\AdminDomain\Entities\Domain;
 use DomainWhois\Whois;
 use GdaDesenv\AdminClient\Entities\Client;
 use Illuminate\Http\Request;

@@ -4,7 +4,7 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use GdaDesenv\AdminClient\Entities\Client;
-use App\Entities\Domain;
+use GdaDesenv\AdminDomain\Entities\Domain;
 
 class DomainTest extends TestCase
 {
