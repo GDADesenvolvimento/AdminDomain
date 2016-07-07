@@ -1,0 +1,21 @@
+{
+  "name": "gdadesenv/admindomain",
+  "description": "Pacote Laravel para adiministrar os 'Domínios' dentro do GDA Admin",
+  "authors": [
+    {
+      "name": "Diogo Bemfica",
+      "email": "diogo.fragabemfica@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.5.0",
+    "gdadesenv/adminclient": "dev-master",
+    "gdadesenv/domainwhois": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "GdaDesenv\\AdminDomain\\":"src/"
+    }
+  }
+}
