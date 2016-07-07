@@ -2,9 +2,11 @@
 
 namespace GdaDesenv\AdminDomain\Controllers;
 
-use GdaDesenv\AdminDomain\Entities\Domain;
+
+use App\Http\Controllers\Controller;
 use DomainWhois\Whois;
 use GdaDesenv\AdminClient\Entities\Client;
+use GdaDesenv\AdminDomain\Entities\Domain;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Validator;
