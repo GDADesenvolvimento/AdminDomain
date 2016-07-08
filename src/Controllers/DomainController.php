@@ -52,6 +52,11 @@ class DomainController extends Controller
         $domain->status = $request->input('status');
         $domain->save();
 
+        if ($request->hasFile('image')) {
+            $path = storage_path().'/domain/';
+            $request->file('image')->move($path, $domain->id.".".$request->file('image')->getClientOriginalExtension());
+        }
+
         $domains = Domain::all();
         return redirect()->route('domains',['domains' => $domains])->with('success', 'Domínio salvo com sucesso!');
     }
@@ -93,6 +98,11 @@ class DomainController extends Controller
         $domain->valor = $request->input('valor');
         $domain->status = $request->input('status');
         $domain->save();
+
+        if ($request->hasFile('image')) {
+            $path = storage_path().'/domain/';
+            $request->file('image')->move($path, $domain->id.".".$request->file('image')->getClientOriginalExtension());
+        }
 
         $domains = Domain::all();
         return redirect()->route('domains',['domains' => $domains])->with('success', 'Domínio atualizado com sucesso!');

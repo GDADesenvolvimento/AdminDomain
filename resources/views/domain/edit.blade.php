@@ -29,7 +29,7 @@
             </ul>
         </div>
     @endif
-    <form action="{{ route('domain.update') }}" method="POST">
+    <form action="{{ route('domain.update') }}" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_method" value="PUT">
         <input type="hidden" name="id" value="{{ $domain->id }}">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -97,6 +97,14 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-info"></i></span>
                             <input name="status" type="text" class="form-control" placeholder="Status do Domínio" value="{{ @$domain->status }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-picture-o"></i></span>
+                            <input name="image" type="file" class="form-control">
                         </div>
                     </div>
                 </div>
