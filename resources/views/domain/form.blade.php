@@ -51,7 +51,22 @@
                     <div class="col-xs-12">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                            <input name="nome" type="text" class="form-control" placeholder="Nome" value="{{ old('nome') }}">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-globe"></i></span>
                             <input name="dominio" type="text" class="form-control" placeholder="Domínio" value="{{ old('dominio') }}">
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                            <input type="checkbox" name="publicado" value="1"> Publicar
                         </div>
                     </div>
                 </div>
@@ -101,6 +116,12 @@
                             <span class="input-group-addon"><i class="fa fa-picture-o"></i></span>
                             <input name="image" type="file" class="form-control">
                         </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea name="descricao" class="textarea" placeholder="Descrição do serviço" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ old('descricao') }}</textarea>
                     </div>
                 </div>
             </div><!-- /.box-body -->
