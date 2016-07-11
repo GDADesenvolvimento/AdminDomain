@@ -44,12 +44,15 @@ class DomainController extends Controller
 
         $domain = new Domain();
         $domain->client_id = $request->input('client_id');
+        $domain->nome = $request->input('nome');
         $domain->dominio = $request->input('dominio');
         $domain->data_registro = $request->input('data_registro');
         $domain->data_vencimento = $request->input('data_vencimento');
         $domain->orgao_registro = $request->input('orgao_registro');
         $domain->valor = $request->input('valor');
         $domain->status = $request->input('status');
+        $domain->descricao = $request->input('descricao');
+        $domain->publicado = $request->input('publicado');
         $domain->save();
 
         if ($request->hasFile('image')) {
@@ -91,12 +94,15 @@ class DomainController extends Controller
         }
 
         $domain->client_id = $request->input('client_id');
+        $domain->nome = $request->input('nome');
         $domain->dominio = $request->input('dominio');
         $domain->data_registro = $request->input('data_registro');
         $domain->data_vencimento = $request->input('data_vencimento');
         $domain->orgao_registro = $request->input('orgao_registro');
         $domain->valor = $request->input('valor');
         $domain->status = $request->input('status');
+        $domain->descricao = $request->input('descricao');
+        $domain->publicado = $request->input('publicado');
         $domain->save();
 
         if ($request->hasFile('image')) {

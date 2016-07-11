@@ -65,7 +65,6 @@
                     </div>
                     <div class="col-xs-2">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-globe"></i></span>
                             <input type="checkbox" name="publicado" value="1"> Publicar
                         </div>
                     </div>

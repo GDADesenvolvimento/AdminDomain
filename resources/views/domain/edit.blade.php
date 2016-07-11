@@ -62,7 +62,6 @@
                     </div>
                     <div class="col-xs-2">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-globe"></i></span>
                             @if( $domain->publicado == 1 )
                                 <input checked type="checkbox" name="publicado" value="1"> Publicar
                             @else
