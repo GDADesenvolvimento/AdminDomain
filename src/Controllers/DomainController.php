@@ -56,7 +56,7 @@ class DomainController extends Controller
         $domain->save();
 
         if ($request->hasFile('image')) {
-            $path = public_path().'/domain/';
+            $path = storage_path().'/domain/';
             $request->file('image')->move($path, $domain->id.".".$request->file('image')->getClientOriginalExtension());
         }
 
@@ -106,7 +106,7 @@ class DomainController extends Controller
         $domain->save();
 
         if ($request->hasFile('image')) {
-            $path = public_path().'/domain/';
+            $path = storage_path().'/domain/';
             $request->file('image')->move($path, $domain->id.".".$request->file('image')->getClientOriginalExtension());
         }
 
