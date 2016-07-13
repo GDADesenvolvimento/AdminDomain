@@ -49,7 +49,7 @@ class DomainController extends Controller
         $domain->data_registro = $request->input('data_registro');
         $domain->data_vencimento = $request->input('data_vencimento');
         $domain->orgao_registro = $request->input('orgao_registro');
-        $domain->valor = $request->input('valor');
+        $domain->valor = paraFloat($request->input('valor'));
         $domain->status = $request->input('status');
         $domain->descricao = $request->input('descricao');
         $domain->publicado = $request->input('publicado');
@@ -99,7 +99,7 @@ class DomainController extends Controller
         $domain->data_registro = $request->input('data_registro');
         $domain->data_vencimento = $request->input('data_vencimento');
         $domain->orgao_registro = $request->input('orgao_registro');
-        $domain->valor = $request->input('valor');
+        $domain->valor = paraFloat($request->input('valor'));
         $domain->status = $request->input('status');
         $domain->descricao = $request->input('descricao');
         $domain->publicado = $request->input('publicado');
