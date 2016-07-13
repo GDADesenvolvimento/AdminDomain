@@ -30,12 +30,15 @@ class DomainTest extends TestCase
 
         Domain::create([
             'client_id' => $client->id,
+            'nome' => 'teste com br',
             'dominio' => 'teste.com.br',
             'data_registro' => '1970-01-01',
             'data_vencimento' => '1970-01-01',
             'orgao_registro' => 'registro.br',
             'valor' => '40',
-            'status' => 'publish'
+            'status' => 'publish',
+            'descricao' => 'description teste',
+            'publicado' => 1
         ]);
 
         $this->seeInDatabase('domains',['dominio' => 'teste.com.br']);
@@ -153,12 +156,15 @@ class DomainTest extends TestCase
 
         $domain = Domain::create([
             'client_id' => $client->id,
+            'nome' => 'teste com br',
             'dominio' => 'teste.com.br',
             'data_registro' => '1970-01-01',
             'data_vencimento' => '1970-01-01',
             'orgao_registro' => 'registro.br',
             'valor' => '40',
-            'status' => 'publish'
+            'status' => 'publish',
+            'descricao' => 'description teste',
+            'publicado' => 1
         ]);
 
         $this->visit('/domain/edit/'.$domain->id)
@@ -224,12 +230,15 @@ class DomainTest extends TestCase
 
         $domain = Domain::create([
             'client_id' => $client->id,
+            'nome' => 'teste com br',
             'dominio' => 'teste.com.br',
             'data_registro' => '1970-01-01',
             'data_vencimento' => '1970-01-01',
             'orgao_registro' => 'registro.br',
             'valor' => '40',
-            'status' => 'publish'
+            'status' => 'publish',
+            'descricao' => 'description teste',
+            'publicado' => 1
         ]);
 
         $this->visit('/domain/edit/'.$domain->id)
