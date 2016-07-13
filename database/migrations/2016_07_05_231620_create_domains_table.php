@@ -24,7 +24,7 @@ class CreateDomainsTable extends Migration
             $table->double('valor', 10, 2);
             $table->string('status');
             $table->string('descricao');
-            $table->boolean('publicado');
+            $table->boolean('publicado')->nullable();
             $table->timestamps();
         });
     }
