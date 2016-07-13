@@ -9,12 +9,15 @@ class Domain extends Model
 {
     protected $fillable = [
         'client_id',
+        'nome',
         'dominio',
         'data_registro',
         'data_vencimento',
         'orgao_registro',
         'valor',
         'status',
+        'descricao',
+        'publicado',
     ];
 
     public function client()
